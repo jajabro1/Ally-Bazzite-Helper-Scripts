@@ -3,6 +3,8 @@ For Use in Bazzite
 Credit to the script at the link below: 
 https://github.com/moonlight-stream/moonlight-qt/issues/752
 
+DISCLAIMER: I make assumptions here. First that if you got Bazzite on your Ally to begin with that you are slightly tech savvy, enough to maybe use Git Clone and create files and scripts. As well as that you might be already Steam savvy and know how to add Non-Steam Games. Finally, that you can figure out how to navigate GUI from built in apps such as the KDEWallet and KDEWalletManager. 
+
 These scripts are meant to help resolve stuttering issues when streaming from something like Moonlight or GeForce Now.
 
 Steps: 
@@ -10,6 +12,7 @@ Steps:
 2. Give the Execute permissions either via the GUI or using terminal (chmod +x PATH_TO_SCRIPT/NameOfScript.sh
 3. If you intend to add these as non-steam games like I did, you will have to use KDEWALLETMANAGER and change the password to your wallet to be blank. 
   Otherwise you will notice it doesn't make the changes it needs to in Steam Big Picture Mode. If you intend to only run the script in desktop mode then you are done and all set.
+  Note here: I think I had to download the KDEWALLET flatpak from Discover to do this, the already installed version seemed to not want to open for me. Try yours first, if it gives issues look for it in Discover. 
   Jump to step: 
 4. Add the scripts via Steam as a Non-Steam game
 5. Run BSSID_Lock.sh to before you start a streaming session, this will do the following: Lock your Ally to the BSSID you are currently connected to meaning the WIFI access point and the frequency you are on. 
