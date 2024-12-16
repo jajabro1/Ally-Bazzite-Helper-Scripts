@@ -6,7 +6,7 @@ BSSID=$(echo $LINK_INFO | grep -o -P '(?<=Connected to ).*(?= \(on)' | tr '[:low
 SSID=$(echo $LINK_INFO | grep -o -P '(?<=SSID: ).*(?= freq)')
 
 # Lock Wifi to the BSSID to stop background scanning.
-nmcli con mod $SSID 802-11-wireless.bssid $BSSID
+nmcli con mod "$SSID" 802-11-wireless.bssid $BSSID
 nmcli dev dis $WIFI_CARD
 nmcli dev con $WIFI_CARD
-nmcli con mod $SSID 802-11-wireless.bssid ''
+nmcli con mod "$SSID" 802-11-wireless.bssid ''
